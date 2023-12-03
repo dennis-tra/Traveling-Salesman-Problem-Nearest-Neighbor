@@ -16,7 +16,7 @@ coordinates = (
 
 # create matrix with all the distances between the cities
 def get_distances():
-    api_key = '7f0b7eda-f08e-4126-aff4-f29f270549bb'
+    api_key = 'Graphhopper-API-key'
     api = rp.Graphhopper(api_key=api_key)
     matrix = api.matrix(locations=coordinates, profile='car')
     distances = np.matrix(matrix.distances)
